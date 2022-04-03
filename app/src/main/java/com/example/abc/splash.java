@@ -8,26 +8,29 @@ import android.os.Handler;
 import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
 import android.widget.ImageView;
+import android.widget.TextView;
 
 public class splash extends AppCompatActivity {
 
-    ImageView iv;
-    Animation anm;
+    ImageView img;
+    TextView text;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+        getSupportActionBar().hide();
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_splash);
+        img =(ImageView) findViewById(R.id.img);
+
+        text=(TextView) findViewById(R.id.text1);
+
 
         new Handler().postDelayed(new Runnable() {
             @Override
             public void run() {
-                Intent i = new Intent( getApplicationContext(),MainActivity.class);
-                startActivity(i);
+                Intent intent = new Intent(getApplicationContext(), MainActivity.class);
+                startActivity(intent);
             }
-        },4000);
-
-        iv = findViewById(R.id.imageView2);
-        anm = AnimationUtils.loadAnimation(getApplicationContext(),R.anim.rotate);
-        iv.startAnimation(anm);
+        },2000);
     }
 }

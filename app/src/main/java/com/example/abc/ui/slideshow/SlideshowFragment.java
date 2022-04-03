@@ -26,16 +26,15 @@ public class SlideshowFragment extends Fragment {
                              ViewGroup container, Bundle savedInstanceState) {
 
         Table=getActivity();
-        View root = inflater.inflate(R.layout.fragment_slideshow, container, false);
-        return root;
+        return inflater.inflate(R.layout.fragment_slideshow, container, false);
     }
     public void onStart()
     {
         super.onStart();
         TextView Xx =(TextView) Table.findViewById(R.id.XX);
         TextView Yy =(TextView) Table.findViewById(R.id.YY);
-        ImageView backk =(ImageView) Table.findViewById(R.id.prevv);
-        ImageView nextt =(ImageView) Table.findViewById(R.id.nextt);
+        ImageView backk =(ImageView) Table.findViewById(R.id.Backimg);
+        ImageView nextt =(ImageView) Table.findViewById(R.id.Nextimg);
         TextView  dis =(TextView) Table.findViewById(R.id.disp);
         TextView  dis2 =(TextView) Table.findViewById(R.id.disp2);
         String []  arrstr=getResources().getStringArray(R.array.duaa);

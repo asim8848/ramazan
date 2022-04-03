@@ -45,10 +45,10 @@ public class GalleryFragment extends Fragment {
         super.onStart();
         TextView XX =(TextView) table.findViewById(R.id.xx);
         TextView YY =(TextView) table.findViewById(R.id.yy);
-        ImageView prev =(ImageView) table.findViewById(R.id.prev);
-        ImageView next =(ImageView) table.findViewById(R.id.next);
-        TextView  display =(TextView) table.findViewById(R.id.display);
-        String []  strarr=getResources().getStringArray(R.array.allahname);
+        ImageView prev =(ImageView) table.findViewById(R.id.Backimg);
+        ImageView next =(ImageView) table.findViewById(R.id.Nextimg);
+        TextView  display =(TextView) table.findViewById(R.id.names);
+        String []  strarr=getResources().getStringArray(R.array.namessss);
         YY.setText(String.valueOf(strarr.length));
         XX.setText(String.valueOf(index+1)+"/");
         display.setText(strarr[index]);
@@ -58,7 +58,7 @@ public class GalleryFragment extends Fragment {
             @Override
             public void onClick(View view) {
                 if(index==0) {
-                    Toast.makeText(getActivity().getApplicationContext(),"Cannot go Back",Toast.LENGTH_SHORT).show();
+                    Toast.makeText(getActivity().getApplicationContext(),"No previous Found",Toast.LENGTH_SHORT).show();
                 }
                 else
                 {

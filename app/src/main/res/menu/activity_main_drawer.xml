@@ -6,23 +6,20 @@
     <group android:checkableBehavior="single">
         <item
             android:id="@+id/nav_home"
-            android:icon="@drawable/suhooriftartime"
-            android:title="Suhoor/Iftar Times" />
+            android:icon="@drawable/time"
+            android:title="SUHOOR/IFTAR TIMES" />
         <item
             android:id="@+id/nav_gallery"
-            android:icon="@drawable/names99"
-            android:title="99 Names of Allah" />
+            android:icon="@drawable/allah"
+            android:title="99 NAMES OF ALLAH" />
         <item
             android:id="@+id/nav_slideshow"
-            android:icon="@drawable/lantern"
-            android:title="Dua'as and Translation" />
-        <item
-            android:id="@+id/prayerFragment"
-            android:icon="@drawable/prayert"
-            android:title="Prayer Timings" />
+            android:icon="@drawable/dua"
+            android:title="DUAS" />
+
         <item
             android:id="@+id/ramadanguide"
-            android:icon="@drawable/kabah"
+            android:icon="@drawable/guide"
             android:title="Ramadan Guide" />
     </group>
 </menu>
